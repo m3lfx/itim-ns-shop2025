@@ -71,3 +71,5 @@ EOT;
     $products_item .= '</ul>';
     echo $products_item;
 }
+include('./includes/footer.php');
+
