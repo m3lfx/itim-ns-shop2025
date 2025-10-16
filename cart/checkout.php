@@ -1,7 +1,7 @@
 <?php
 session_start();
-include('includes/header.php');
-include('includes/config.php');
+include('../includes/header.php');
+include('../includes/config.php');
 
 try {
     mysqli_query($conn, 'START TRANSACTION');

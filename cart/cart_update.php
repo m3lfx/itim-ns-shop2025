@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-include('./includes/header.php');
-include('./includes/config.php');
+include('../includes/header.php');
+include('../includes/config.php');
 // print_r($_);
 if (isset($_POST["type"]) && $_POST["type"] == 'add' && $_POST["item_qty"] > 0) {
     foreach ($_POST as $key => $value) { //add all post vars to new_product array
@@ -58,4 +58,4 @@ if (isset($_POST["product_qty"]) || isset($_POST["remove_code"])) {
     echo "</pre>";
 
 }
-header('Location: index.php');
+header('Location: ../index.php');

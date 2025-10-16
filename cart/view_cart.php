@@ -1,7 +1,7 @@
 <?php
 session_start();
-include('includes/header.php');
-include('includes/config.php');
+include('../includes/header.php');
+include('../includes/config.php');
 ?>
 
 <h1 align="center">View Cart</h1>
@@ -55,5 +55,5 @@ include('includes/config.php');
     </form>
 </div>
 <?php
-include('./includes/footer.php');
+include('../includes/footer.php');
 ?>
