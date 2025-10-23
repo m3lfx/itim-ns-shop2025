@@ -22,7 +22,7 @@ $itemCount = mysqli_num_rows($result);
     while ($row = mysqli_fetch_assoc($result)) {
         echo "<tr>";
 
-        echo "<td>{$row['orderId']}</td>";
+        echo "<td>{$row['orderinfo_id']}</td>";
         echo "<td>{$row['total']}</td>";
         if($row['status'] === 'Delivered') {
             echo "<td style='color: green'>{$row['status']}</td>";
@@ -37,7 +37,7 @@ $itemCount = mysqli_num_rows($result);
         }
 
         else {
-            echo "<td><a href='orderDetails.php?id={$row['orderId']}'><i class='fa-regular fa-eye' style='color: blue'></i></a></td>";
+            echo "<td><a href='orderDetails.php?id={$row['orderinfo_id']}'><i class='fa-regular fa-eye' style='color: blue'></i></a></td>";
             echo "</tr>";
         }
 
