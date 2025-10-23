@@ -8,7 +8,7 @@ print_r($_SESSION);
 if(isset($_SESSION["cart_products"]) && count($_SESSION["cart_products"]) > 0) {
     echo '<div class="cart-view-table-front" id="view-cart">';
     echo '<h3>Your Shopping Cart</h3>';
-    echo '<form method="POST" action="cart_update.php">';
+    echo '<form method="POST" action="./cart/cart_update.php">';
     echo '<table width="100%"  cellpadding="6" cellspacing="0">';
     echo '<tbody>';
     $total = 0;

@@ -3,7 +3,7 @@ session_start();
 
 include('../includes/header.php');
 include('../includes/config.php');
-// print_r($_);
+// print_r($_POST);
 if (isset($_POST["type"]) && $_POST["type"] == 'add' && $_POST["item_qty"] > 0) {
     foreach ($_POST as $key => $value) { //add all post vars to new_product array
         $new_product[$key] = $value;
@@ -26,6 +26,7 @@ if (isset($_POST["type"]) && $_POST["type"] == 'add' && $_POST["item_qty"] > 0) 
             unset($_SESSION["cart_products"][$new_product['item_id']]);
         }
     }
+    // cart_products[1] = $new_product
     $_SESSION["cart_products"][$new_product['item_id']] = $new_product;
     echo "print <pre>";
     print_r($_SESSION);
